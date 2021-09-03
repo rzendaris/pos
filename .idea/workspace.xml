@@ -423,6 +423,10 @@
     <state x="399" y="256" key="com.intellij.ide.util.TipDialog/0.23.1440.800@0.23.1440.800" timestamp="1623342616213" />
     <state x="399" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.804@0.23.1440.804" timestamp="1630650913508" />
     <state x="399" y="258" key="com.intellij.ide.util.TipDialog/0.23.1440.806@0.23.1440.806" timestamp="1622643184430" />
+    <state x="386" y="180" width="667" height="486" key="find.popup" timestamp="1630651605148">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="386" y="180" width="667" height="486" key="find.popup/0.23.1440.804@0.23.1440.804" timestamp="1630651605148" />
     <state x="385" y="151" width="670" height="676" key="search.everywhere.popup" timestamp="1623344238128">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
@@ -435,6 +439,11 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/id/kopipintar/pos/ActivityTambahPengeluaran.java</url>
           <line>172</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/id/kopipintar/pos/ActivityPembayaran.java</url>
+          <line>527</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
