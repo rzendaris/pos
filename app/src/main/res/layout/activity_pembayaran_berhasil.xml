@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPembayaranBerhasil">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="50dp"
+        android:background="@drawable/bg_outline_radius"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/label_pembayaran_berhasil"
+            app:srcCompat="@drawable/checked"
+            app:layout_constraintEnd_toStartOf="@id/label_pembayaran_berhasil"
+            app:layout_constraintTop_toTopOf="@id/label_pembayaran_berhasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#01579b"
+            android:layout_marginTop="10dp"
+            android:id="@+id/label_pembayaran_berhasil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Pembayaran Berhasil"
+            android:textSize="26.7sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#01579b"
+            android:layout_marginTop="10dp"
+            android:id="@+id/label_kembalian"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_pembayaran_berhasil"
+            android:text="Kembalian"
+            android:textSize="26.7sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#01579b"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_kembalian"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_kembalian"
+            android:text="0"
+            android:textSize="26.7sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="30dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_kembalian"
+            android:id="@+id/cv_detail_trx"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#01579b"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="No. Transaksi"
+                    android:id="@+id/label_no_trx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="#01579b"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="123321123321"
+                    android:id="@+id/tv_no_trx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#01579b"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@id/label_no_trx"
+                    app:layout_constraintTop_toBottomOf="@id/label_no_trx"
+                    android:text="Waktu. Transaksi"
+                    android:id="@+id/label_wktu_trx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#01579b"
+                    android:textSize="14sp"
+                    app:layout_constraintRight_toRightOf="@id/tv_no_trx"
+                    app:layout_constraintTop_toBottomOf="@id/tv_no_trx"
+                    android:text="19/07/2019 11:03:11"
+                    android:id="@+id/tv_wktu_trx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#01579b"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@id/label_no_trx"
+                    app:layout_constraintTop_toBottomOf="@id/label_wktu_trx"
+                    android:text="Total Item"
+                    android:id="@+id/label_total_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#01579b"
+                    android:textSize="14sp"
+                    app:layout_constraintRight_toRightOf="@id/tv_wktu_trx"
+                    app:layout_constraintTop_toBottomOf="@id/label_wktu_trx"
+                    android:text="2"
+                    android:id="@+id/tv_total_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#01579b"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@id/label_no_trx"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_item"
+                    android:text="Total Harga"
+                    android:id="@+id/label_total_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#01579b"
+                    android:textSize="14sp"
+                    app:layout_constraintRight_toRightOf="@id/tv_total_item"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_item"
+                    android:text="20.000"
+                    android:id="@+id/tv_total_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_oke"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_detail_trx"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_round_corner_blue"
+            android:text="OKE"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cell_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/table_view_cell_height"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        app:srcCompat="@drawable/ic_action_delete_24dp"
+        android:id="@+id/btn_delete"
+        android:background="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_done"
+            app:srcCompat="@drawable/ic_done_24dp"
+            android:background="#6AC259"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_view_default_text_size"
+        tools:text="Cell Data"
+        android:visibility="gone"
+        android:text="Cancelled"
+        android:id="@+id/tv_cancelled"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/ll_pengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_marginEnd="10dp"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_edit_24dp"
+            android:id="@+id/btn_edit_pengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_delete_24dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/btn_delete_pengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:text="Action"
+            android:id="@+id/btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

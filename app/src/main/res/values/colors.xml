@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01579b</color>
+    <color name="colorPrimaryDark">#FF024277</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="mediumBlue">#306cb5</color>
+
+    <color name="sapphire">#1f1fa2</color>
+    <color name="sapphireTwo">#2748ad</color>
+    <color name="textColor">#ebf2fa</color>
+
+    <color name="paleGray">#ebf2fa</color>
+    <color name="paleGrayTwo">#edeef2</color>
+
+    <color name="paleGrayThree">#e7e8ec</color>
+    <color name="paleGrayFour">#c6c6c6</color>
+
+    <color name="greyish">#b7b7b7</color>
+    <color name="greyishTwo">#b2b2b2</color>
+
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+
+    <color name="greyishBrown">#4a4a4a</color>
+    <color name="greyishBrownTwo">#474747</color>
+    <color name="greyishBrownThree">#494949</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="silver">#cdced1</color>
+    <color name="silverTwo">#e0e1e1</color>
+
+    <color name="cloudyBlue">#d1d4e4</color>
+
+    <color name="cobalt">#1f2081</color>
+
+    <color name="darkSkyBlue">#359be0</color>
+
+    <color name="redTwo">#d90000</color>
+    <color name="tomato">#d93b20</color>
+
+    <color name="blueGray">#636a94</color>
+
+    <color name="lightRoyalBlue">#494cff</color>
+    <color name="lightBlueGray">#b4badc</color>
+
+    <color name="light_cyan">#9cffff</color>
+    <color name="greyish_brown_two">#474747</color>
+
+    <color name="selected_background_color">#15a4fa</color>
+    <color name="unselected_background_color">#ffffff</color>
+    <color name="shadow_background_color">#28415f</color>
+    <color name="unselected_header_background_color">#01579b</color>
+
+    <color name="unselected_text_color">#ffffff</color>
+    <color name="unselected_cell_text_color">#474747</color>
+    <color name="selected_text_color">#273e5b</color>
+    <color name="separator_color">#273e5b</color>
+
+    <color name="popup_menu_item_text_color">#88a5c9</color>
+
+    <color name="female_icon_color">#e9515f</color>
+    <color name="male_icon_color">#f28944</color>
+
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "223961621802",
+    "firebase_url": "https://my-profit-sabana.firebaseio.com",
+    "project_id": "my-profit-sabana",
+    "storage_bucket": "my-profit-sabana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223961621802:android:e09291701da45e511aaa53",
+        "android_client_info": {
+          "package_name": "id.kopipintar.pos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223961621802-qj1k3ms4ts6l51fq5038qotsvcvnhep3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_8MxzFXyQjGKnYZqv4wCJu86mhaTZ0Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223961621802-qj1k3ms4ts6l51fq5038qotsvcvnhep3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

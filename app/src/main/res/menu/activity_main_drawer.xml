@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_penjualan"
+            android:icon="@drawable/cashier"
+            android:title="@string/menu_penjualan" />
+        <item
+            android:id="@+id/nav_riwayat_penjualan"
+            android:icon="@drawable/history_clock_button"
+            android:title="@string/menu_riwayat_penjualan" />
+        <item
+            android:id="@+id/nav_pengeluaran"
+            android:icon="@drawable/invoice"
+            android:title="@string/menu_pengeluaran" />
+        <item
+            android:id="@+id/nav_ubah_password"
+            android:icon="@drawable/lock"
+            android:title="@string/menu_ubah_password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

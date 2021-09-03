@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ActivityTambahPengeluaran">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/label_pengeluaran"
+            android:src="@drawable/coin"
+            app:layout_constraintEnd_toStartOf="@id/label_pengeluaran"
+            app:layout_constraintTop_toTopOf="@id/label_pengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#01579b"
+            android:layout_marginTop="10dp"
+            android:id="@+id/label_pengeluaran"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Pembayaran"
+            android:textSize="26.7sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_pengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:text="Total Belanja"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_total_belanja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:layout_marginTop="3dp"
+                android:id="@+id/et_total_belanja"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_outline_radius"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:text="Pembayaran"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/label_pembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:inputType="number"
+                android:layout_marginTop="3dp"
+                android:id="@+id/et_pembayaran"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_outline_radius"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_uang_pas"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="Uang PAS"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btn_lima_puluh_ribu"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="50.000"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btn_seratus_lima_puluh_ribu"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="150.000"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_dua_puluh_ribu"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="20.000"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btn_seratus_ribu"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="100.000"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btn_dua_ratus_ribu"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="200.000"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:text="Metode Pembayaran Lainnya:"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/label_pembayaran_lainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_dana"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="DANA" />
+
+                    <Button
+                        android:id="@+id/btn_ovo"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="OVO" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_gopay"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="GoPay" />
+
+                    <Button
+                        android:id="@+id/btn_shopee_pay"
+                        android:layout_width="120dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_outline_square"
+                        android:text="SHOPEE PAY" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_final_bayar"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_corner_blue"
+                android:text="BAYAR"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

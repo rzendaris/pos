@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ActivityTambahPengeluaran">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/label_pengeluaran"
+            android:src="@drawable/invoice"
+            app:layout_constraintEnd_toStartOf="@id/label_pengeluaran"
+            app:layout_constraintTop_toTopOf="@id/label_pengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#01579b"
+            android:layout_marginTop="10dp"
+            android:id="@+id/label_pengeluaran"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Tambah Pengeluaran"
+            android:textSize="26.7sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Item*    :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/sp_item"
+            app:layout_constraintTop_toBottomOf="@id/label_pengeluaran"
+            android:id="@+id/label_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/sp_item"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintEnd_toStartOf="@+id/et_tanggal"
+            app:layout_constraintTop_toBottomOf="@+id/label_item"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="3dp"
+            app:layout_constraintLeft_toLeftOf="@id/et_tanggal"
+            app:layout_constraintBottom_toTopOf="@id/et_tanggal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Tanggal*    :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sp_item"
+            android:id="@+id/et_tanggal"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintTop_toTopOf="@+id/sp_item"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Qty*    :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/sp_item"
+            app:layout_constraintTop_toBottomOf="@id/et_tanggal"
+            android:id="@+id/label_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/et_qty"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintEnd_toStartOf="@+id/et_tanggal"
+            app:layout_constraintTop_toBottomOf="@+id/label_qty"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Harga Satuan*    :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/et_harga_satuan"
+            app:layout_constraintTop_toBottomOf="@id/et_tanggal"
+            android:id="@+id/label_harga_satuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="3dp"
+            android:id="@+id/et_harga_satuan"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintEnd_toEndOf="@+id/et_tanggal"
+            app:layout_constraintTop_toBottomOf="@+id/label_qty"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Satuan*    :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/spinner_satuan"
+            app:layout_constraintTop_toBottomOf="@id/et_qty"
+            android:id="@+id/label_satuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:background="@drawable/bg_outline_radius"
+            android:layout_marginTop="3dp"
+            android:id="@+id/spinner_satuan"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintStart_toStartOf="@+id/et_qty"
+            app:layout_constraintTop_toBottomOf="@+id/label_satuan"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Keterangan    :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/et_keterangan"
+            app:layout_constraintTop_toBottomOf="@id/spinner_satuan"
+            android:id="@+id/label_keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="3dp"
+            android:id="@+id/et_keterangan"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintEnd_toEndOf="@id/et_harga_satuan"
+            app:layout_constraintStart_toStartOf="@id/spinner_satuan"
+            app:layout_constraintTop_toBottomOf="@+id/label_keterangan"
+            android:layout_width="0dp"
+            android:layout_height="80dp"/>
+
+        <Button
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_keterangan"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="130dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="Simpan"
+            android:background="@drawable/bg_round_corner_blue"
+            android:id="@+id/btn_simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

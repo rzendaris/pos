@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ActivityPembatalanPenjualan">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/label_transaksi"
+            app:srcCompat="@drawable/ic_monetization_on"
+            app:layout_constraintEnd_toStartOf="@id/label_transaksi"
+            app:layout_constraintTop_toTopOf="@id/label_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#01579b"
+            android:layout_marginTop="10dp"
+            android:id="@+id/label_transaksi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Pembatalan Penjualan"
+            android:textSize="26.7sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="No. Transaksi :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/et_no_trx"
+            app:layout_constraintTop_toBottomOf="@id/label_transaksi"
+            android:id="@+id/label_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:enabled="false"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/et_no_trx"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="Token Listrik"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintEnd_toStartOf="@+id/et_tanggal_trx"
+            app:layout_constraintTop_toBottomOf="@+id/label_item"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Tanggal   :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/et_tanggal_trx"
+            app:layout_constraintTop_toBottomOf="@id/label_transaksi"
+            android:id="@+id/label_tgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/et_no_trx"
+            android:id="@+id/et_tanggal_trx"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="20/07/2019"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintTop_toTopOf="@+id/et_no_trx"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Total Item    :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/et_no_trx"
+            app:layout_constraintTop_toBottomOf="@id/et_tanggal_trx"
+            android:id="@+id/label_total_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:enabled="false"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/et_total_item"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="1"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintEnd_toStartOf="@+id/et_tanggal_trx"
+            app:layout_constraintTop_toBottomOf="@+id/label_total_item"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Total Harga   :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/et_harga"
+            app:layout_constraintTop_toBottomOf="@id/et_tanggal_trx"
+            android:id="@+id/label_total_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:enabled="false"
+            android:layout_marginTop="3dp"
+            android:id="@+id/et_harga"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="50000"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintEnd_toEndOf="@+id/et_tanggal_trx"
+            app:layout_constraintTop_toBottomOf="@+id/label_total_item"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Alasan Pembatalan :"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/et_total_item"
+            app:layout_constraintTop_toBottomOf="@id/et_total_item"
+            android:id="@+id/label_keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="3dp"
+            android:id="@+id/et_alasan"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/bg_outline_radius"
+            app:layout_constraintEnd_toEndOf="@id/et_harga"
+            app:layout_constraintStart_toStartOf="@id/et_total_item"
+            app:layout_constraintTop_toBottomOf="@+id/label_keterangan"
+            android:layout_width="0dp"
+            android:layout_height="80dp"/>
+
+        <Button
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_alasan"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="130dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="Simpan"
+            android:background="@drawable/bg_round_corner_blue"
+            android:id="@+id/btn_simpan_pembatalan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

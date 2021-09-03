@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ActivityLogin">
+
+    <TextView
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/linear_et_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linear_et_container"
+        android:orientation="vertical"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:inputType="textEmailAddress"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="30dp"
+            android:hint="Enter Email"
+            android:background="@drawable/bg_round_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="30dp"
+            android:hint="Enter Password"
+            android:background="@drawable/bg_round_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:paddingHorizontal="50dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Login"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@id/linear_et_container"
+        app:layout_constraintStart_toStartOf="@id/linear_et_container"
+        android:background="@drawable/bg_round_corner"
+        app:layout_constraintTop_toBottomOf="@id/linear_et_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

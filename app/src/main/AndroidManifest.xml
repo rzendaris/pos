@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.kopipintar.pos">
+
+    <application
+        android:name=".utils.PrintUtils"
+        android:allowBackup="true"
+        android:icon="@mipmap/kopi_pintar"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/kopi_pintar_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ActivityPembayaranBerhasil"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ActivityPembayaran"
+            android:parentActivityName=".ActivityPenjualan"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityPembatalanPenjualan"
+            android:parentActivityName=".ActivityRiwayatPenjualan"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityUbahPassword"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityTambahPengeluaran"
+            android:parentActivityName=".ActivityPengeluaran"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityLogin"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityPengeluaran"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityRiwayatPenjualan"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityPenjualan"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+</manifest>

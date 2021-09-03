@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Kopi Pintar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="pair">Pair BlueTooth Printer</string>
+    <string name="unpair">Unpair BlueTooth Printer</string>
+
+    <string name="menu_penjualan">Penjualan</string>
+    <string name="menu_riwayat_penjualan">Riwayat Penjualan</string>
+    <string name="menu_pengeluaran">Pengeluaran</string>
+    <string name="menu_ubah_password">Ubah Password</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_send">Send</string>
+
+    <!--fragment title-->
+    <string name="fragment_paket">Paket</string>
+    <string name="fragment_satuan">Satuan</string>
+    <string name="fragment_grabfood">Grabfood</string>
+    <string name="fragment_paket_hemat">Paket Hemat</string>
+
+    <!--detail payment-->
+    <string name="subtotal">Subtotal</string>
+    <string name="diskon">Diskon</string>
+    <string name="total">Total</string>
+    <string name="reset">Reset</string>
+    <string name="bayar">Bayar</string>
+
+    <string-array name="bulan">
+        <item>Januari, 2019</item>
+        <item>Februari, 2019</item>
+        <item>Maret, 2019</item>
+        <item>April, 2019</item>
+        <item>Mei, 2019</item>
+        <item>Juni, 2019</item>
+        <item>Juli, 2019</item>
+        <item>Agustus, 2019</item>
+        <item>September, 2019</item>
+        <item>Oktober, 2019</item>
+        <item>November, 2019</item>
+        <item>Desember, 2019</item>
+    </string-array>
+
+    <string-array name="items">
+        <item>1x Paha Atas</item>
+        <item>1x Nasi Putih</item>
+        <item>1x Air Mineral 500ml</item>
+    </string-array>
+
+    <string-array name="satuan">
+        <item>item</item>
+        <item>pack</item>
+        <item>buah</item>
+        <item>L</item>
+    </string-array>
+
+    <string name="error_jumlah_bayar">Nominal Pembayaran harus lebih besar dari total belanja!</string>
+    <string name="error_nol_bayar">Nominal pembayaran tidak boleh kosong!</string>
+
+</resources>
